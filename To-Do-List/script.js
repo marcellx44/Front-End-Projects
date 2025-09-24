@@ -12,7 +12,12 @@ elemento.textContent="Tarefa0";
 
 /*Inserir o elemento */
 
-lista.insertBefore(elemento,itens[1]);
+//lista.insertBefore(elemento,itens[1]);
 
 /*Adicionar ao clicar */
 var botao= document.getElementById("btn-add");
+botao.addEventListener("click", inserir);
+
+function inserir(){
+    lista.insertBefore(elemento,itens[0]);
+}
