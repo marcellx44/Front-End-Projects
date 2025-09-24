@@ -8,7 +8,7 @@ var itens= lista.children;
 /*Criar o novo elemento e preencher */
 
 var elemento= document.createElement("li");
-elemento.textContent("Tarefa0");
+elemento.textContent="Tarefa0";
 
 /*Inserir o elemento */
 
