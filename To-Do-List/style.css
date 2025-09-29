@@ -18,3 +18,7 @@
     flex-basis: 200px;
     height: auto;
 }
+
+#btn-add{
+    cursor:pointer;
+}

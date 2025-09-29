@@ -1,23 +1,21 @@
-/*Acessar onde o elemento será inserido */
-var lista= document.getElementById("lista");
-
-/*Acessar os elementos da lista */
-
-var itens= lista.children;
-
-/*Criar o novo elemento e preencher */
-
-var elemento= document.createElement("li");
-elemento.textContent="Tarefa0";
-
-/*Inserir o elemento */
-
-//lista.insertBefore(elemento,itens[1]);
-
-/*Adicionar ao clicar */
-var botao= document.getElementById("btn-add");
-botao.addEventListener("click", inserir);
+/*função inserir */
 
 function inserir(){
-    lista.insertBefore(elemento,itens[0]);
+    /*Pega o elemento digitado */
+    var elemento= document.getElementById("valor-tarefas").value;
+    if(elemento!==""){
+        /*Cria uma TAG em HTML e preenche com o valor do elemento*/
+        var li= document.createElement("li");
+        li.textContent= elemento;
+        /*Inserir na lista */
+        var lista= document.getElementById("lista");
+        lista.appendChild(li);
+    
+        /*Limpa o campo após adicionar */
+        document.getElementById("valor-tarefas").value="";
+    }
 }
+
+/*Chamar função ao clicar no botão */
+var botao= document.getElementById("btn-add");
+botao.addEventListener("click", inserir)
