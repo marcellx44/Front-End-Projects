@@ -1,24 +1,71 @@
+@font-face {
+    font-family:'Open Sans', 'Work Sans';
+    src: url(Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf), format('truetype');
+}
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Open Sans', 'Work Sans';
 }
-
 #container{
-    background-color: rgb(205, 202, 202);
+    background-image:linear-gradient(45deg, oklch(70.4% 0.14 182.503),oklch(52.839% 0.16194 253.158));
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
-
 #card{
-    background-color: rgb(132, 132, 185);
-    padding:10%;
+    background-color: rgb(236, 236, 236);
+    padding: 3% 5% 10% 5%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     border-radius:20px;
-    flex-basis: 200px;
+    width:300px;
     height: auto;
 }
-
+#conteudo{
+    width:300px;
+}
+/*SUB-CONTAINER1*/
+#sub-container1{
+    text-align:center;
+    margin-bottom:20px;
+}
+/*TÍTULO*/
+#sub-container1>h1{
+    color:oklch(52.839% 0.16194 253.158);
+}
+/*SUB-CONTAINER2*/
+#sub-container2{
+    display:flex;
+    flex-direction:row;
+    gap:5px;
+    align-items: center;
+    margin-bottom:10px;
+}
+/*CONTAINER-LISTA*/
+#container-lista{
+    padding-left:6%;
+}
+#lista>li{
+    list-style-type:square;
+}
+/*INPUT*/
+#valor-tarefas{
+    flex:1; /*ao colocar 1 ele ocupa/preenche o tamanho do container*/
+    padding:10px;
+    border-radius:5px;
+    border: 2px solid rgb(213, 210, 210) ;
+}
 #btn-add{
     cursor:pointer;
+    width:30px;
+    height: 42px;
+    border-radius: 5px;
+    background-color:oklch(70.4% 0.14 182.503);
+    border:none;
+    color: white;
 }
+
