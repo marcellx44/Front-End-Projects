@@ -67,7 +67,6 @@
 }
 /*CONTAINER-LISTA*/
 #container-lista{
-    border: 2px solid red;
     height:auto;
     display:flex;
     flex-direction: column;
@@ -76,21 +75,27 @@
     display:flex;
     height:35px;
     margin-bottom:15px;
+    background-color: rgb(255, 255, 255);
+    border-radius:8px;
+    justify-content: center;
+    align-items: center;
 }
 .check-box{
-    border: 2px solid green;
     flex-basis:10%;
+    display:flex;
+}
+.check-box>i{
+   margin:2px 0px 2px 5px;
+   cursor:pointer;
 }
 .conteudo-tarefa{
-    border:2px solid purple;
     flex-basis:80%;
     padding-left:5px;
 }
-.botao-deletar{
-    border:2px solid pink;
+.deletar{
     flex-basis:10%;
 }
-#lista>li{
-    list-style-type:square;
+.deletar>i{
+    margin:3px;
+    cursor:pointer;
 }
-
