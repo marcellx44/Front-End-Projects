@@ -52,6 +52,10 @@
     border-radius:5px;
     border: 2px solid rgb(213, 210, 210) ;
 }
+#valor-tarefas:focus{
+    outline: none;  
+}
+/*BOTÃO-ADD*/
 #btn-add{
     cursor:pointer;
     width:30px;
@@ -70,6 +74,8 @@
 }
 .tarefas-a-fazer{
     display:flex;
+    height:35px;
+    margin-bottom:15px;
 }
 .check-box{
     border: 2px solid green;
@@ -78,6 +84,7 @@
 .conteudo-tarefa{
     border:2px solid purple;
     flex-basis:80%;
+    padding-left:5px;
 }
 .botao-deletar{
     border:2px solid pink;
