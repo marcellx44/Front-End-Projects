@@ -45,13 +45,6 @@
     align-items: center;
     margin-bottom:10px;
 }
-/*CONTAINER-LISTA*/
-#container-lista{
-    padding-left:6%;
-}
-#lista>li{
-    list-style-type:square;
-}
 /*INPUT*/
 #valor-tarefas{
     flex:1; /*ao colocar 1 ele ocupa/preenche o tamanho do container*/
@@ -67,5 +60,30 @@
     background-color:oklch(70.4% 0.14 182.503);
     border:none;
     color: white;
+}
+/*CONTAINER-LISTA*/
+#container-lista{
+    border: 2px solid red;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+}
+.tarefas-a-fazer{
+    display:flex;
+}
+.check-box{
+    border: 2px solid green;
+    flex-basis:10%;
+}
+.conteudo-tarefa{
+    border:2px solid purple;
+    flex-basis:80%;
+}
+.botao-deletar{
+    border:2px solid pink;
+    flex-basis:10%;
+}
+#lista>li{
+    list-style-type:square;
 }
 
