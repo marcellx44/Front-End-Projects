@@ -80,6 +80,17 @@
     justify-content: center;
     align-items: center;
 }
+.tarefa-marcada{
+    display:flex;
+    height:35px;
+    margin-bottom:15px;
+    background-color: rgb(212, 211, 211);
+    border-radius:8px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-decoration:line-through;
+}
 .check-box{
     flex-basis:10%;
     display:flex;
@@ -89,8 +100,19 @@
    cursor:pointer;
 }
 .conteudo-tarefa{
-    flex-basis:80%;
+    flex-basis:70%;
     padding-left:5px;
+}
+.editar{
+    flex-basis:10%;
+    background-color: rgb(184, 207, 250);
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.editar>i{
+    cursor:pointer;
 }
 .deletar{
     flex-basis:10%;
@@ -111,14 +133,7 @@
     background-color: rgb(250, 87, 87);
 }
 
-.tarefa-marcada{
-    display:flex;
-    height:35px;
-    margin-bottom:15px;
-    background-color: rgb(212, 211, 211);
-    border-radius:8px;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    text-decoration:line-through;
+/*EDITAR-HOVER*/
+.editar:hover{
+    background-color: rgb(91, 166, 252);
 }

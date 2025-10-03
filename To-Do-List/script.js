@@ -18,8 +18,15 @@ function inserir(){
         var conteudo= document.createElement("div");
         conteudo.className="conteudo-tarefa";
 
+        var editar=document.createElement("div");
+        editar.className="editar";
+
         var botao_delet= document.createElement("div");
         botao_delet.className="deletar";
+
+        /*Ícone editar */
+        var pencil= document.createElement("i");
+        pencil.className="fa-solid fa-pen-to-square";
 
         /*icone de deletar*/
         var trash= document.createElement("i");
@@ -32,6 +39,8 @@ function inserir(){
         tarefa.appendChild(checkbox);
         checkbox.appendChild(circle);
         tarefa.appendChild(conteudo);
+        tarefa.appendChild(editar);
+        editar.appendChild(pencil);
         tarefa.appendChild(botao_delet);
         botao_delet.appendChild(trash);
         container.appendChild(tarefa);
