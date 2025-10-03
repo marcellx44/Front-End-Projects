@@ -25,13 +25,6 @@ function inserir(){
         var trash= document.createElement("i");
         trash.className= "fa-solid fa-trash";
 
-        /*Função de deletar */
-        var botao_deletar= trash;
-        var container= document.getElementById("container-lista");
-        botao_deletar.addEventListener("click", (event)=>{
-            container.removeChild(event.target.parentNode.parentNode);
-        });
-        
         /*Preenche com o conteudo */
         conteudo.textContent= elemento;
         /*Inserir no #container-lista*/
@@ -42,9 +35,29 @@ function inserir(){
         tarefa.appendChild(botao_delet);
         botao_delet.appendChild(trash);
         container.appendChild(tarefa);
-    
+        
         /*Limpa o campo após adicionar */
         document.getElementById("valor-tarefas").value="";
+
+        /*Função de deletar */
+        var botao_deletar= trash;
+        var container= document.getElementById("container-lista");
+        botao_deletar.addEventListener("click", (event)=>{
+            container.removeChild(event.target.parentNode.parentNode);
+        });
+
+        /*Função check e descheck*/
+        circle.addEventListener("click", ()=>{
+            /*troca o nome da classe para o ícone marcado */
+            circle.className= "fa-solid fa-circle-check";
+            tarefa.className="tarefa-marcada";
+            /*Função descheck */
+            circle.addEventListener("click", ()=>{
+                circle.className="fa-regular fa-circle";
+                tarefa.className="tarefas-a-fazer";
+            })
+        });
+
     }
 }
 

@@ -110,3 +110,15 @@
 .deletar:hover{
     background-color: rgb(250, 87, 87);
 }
+
+.tarefa-marcada{
+    display:flex;
+    height:35px;
+    margin-bottom:15px;
+    background-color: rgb(212, 211, 211);
+    border-radius:8px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-decoration:line-through;
+}
