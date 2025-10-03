@@ -48,14 +48,13 @@ function inserir(){
 
         /*Função check e descheck*/
         circle.addEventListener("click", ()=>{
-            /*troca o nome da classe para o ícone marcado */
-            circle.className= "fa-solid fa-circle-check";
-            tarefa.className="tarefa-marcada";
-            /*Função descheck */
-            circle.addEventListener("click", ()=>{
+            if(circle.className==="fa-regular fa-circle"){
+                circle.className= "fa-solid fa-circle-check";
+                tarefa.className="tarefa-marcada";
+            } else{
                 circle.className="fa-regular fa-circle";
                 tarefa.className="tarefas-a-fazer";
-            })
+            }
         });
 
     }
