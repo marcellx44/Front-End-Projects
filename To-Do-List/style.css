@@ -79,6 +79,7 @@
     border-radius:8px;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 5px rgb(158, 158, 158);
 }
 .tarefa-marcada{
     display:flex;
@@ -90,6 +91,7 @@
     align-items: center;
     font-style: italic;
     text-decoration:line-through;
+    box-shadow: 1px 1px 5px rgb(158, 158, 158);
 }
 .check-box{
     flex-basis:10%;
@@ -136,4 +138,14 @@
 /*EDITAR-HOVER*/
 .editar:hover{
     background-color: rgb(91, 166, 252);
+}
+
+/*tarefas:hover*/
+.tarefas-a-fazer:hover{
+    scale:calc(105%);
+    transition:0.4s;
+}
+.tarefa-marcada:hover{
+    scale:calc(105%);
+    transition:0.4s;
 }
