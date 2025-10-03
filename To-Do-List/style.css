@@ -94,8 +94,19 @@
 }
 .deletar{
     flex-basis:10%;
+    background-color: rgb(253, 160, 160);
+    height:100%;
+    display:flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .deletar>i{
     margin:3px;
     cursor:pointer;
+}
+
+/*DELETAR-HOVER*/
+.deletar:hover{
+    background-color: rgb(250, 87, 87);
 }
