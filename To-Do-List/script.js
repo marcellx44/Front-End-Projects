@@ -24,6 +24,13 @@ function inserir(){
         /*icone de deletar*/
         var trash= document.createElement("i");
         trash.className= "fa-solid fa-trash";
+
+        /*Função de deletar */
+        var botao_deletar= trash;
+        var container= document.getElementById("container-lista");
+        botao_deletar.addEventListener("click", (event)=>{
+            container.removeChild(event.target.parentNode.parentNode);
+        });
         
         /*Preenche com o conteudo */
         conteudo.textContent= elemento;
@@ -43,4 +50,4 @@ function inserir(){
 
 /*Chamar função ao clicar no botão */
 var botao= document.getElementById("btn-add");
-botao.addEventListener("click", inserir)
+botao.addEventListener("click", inserir);
